@@ -1,5 +1,5 @@
  body{margin: 0;
-      background: aqua;}
+      background: #68cdd5;}
  .a1{
      margin-top: 10px;
      margin-left:10px;
@@ -8,19 +8,27 @@
       padding-left: 40px;
       padding-right: 40px;
       text-align: center;
-      margin-top: 70px;
+      margin-top: 32px;
   }
-  .a3{text-align: center;
-      color: white;
-  }
+  .a3{
+         margin-right: 20px;
+         margin-left:20px ;
+         text-align: center;
+         font-size: 21px;
+         color: white;
+      margin-top: 90px;
+     }
   .a4{
+      text-align: center;
       color: white;
-      margin-left:102px;
-      margin-top:600px;
+      margin-left:55px;
+      margin-top:310px;
       float: left;
   }
   .a5 {
-      margin-top: 600px;
-      margin-right: 102px;
+      text-align: center;
+      color:white;
+      margin-top:310px;
+      margin-right: 55px;
       float: right;
   }
