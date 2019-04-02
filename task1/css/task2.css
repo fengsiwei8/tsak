@@ -1,34 +1,34 @@
  body{margin: 0;
       background: #68cdd5;}
- .a1{
+ .header-img{
      margin-top: 10px;
      margin-left:10px;
  }
-  .a2{
+  .img-logo{
       padding-left: 40px;
       padding-right: 40px;
       text-align: center;
       margin-top: 32px;
   }
-  .a3{
+  .content{
          margin-right: 20px;
          margin-left:20px ;
          text-align: center;
          font-size: 21px;
          color: white;
       margin-top: 90px;
+      padding-bottom: 260px;
      }
-  .a4{
+  .footer-img-left{
       text-align: center;
       color: white;
       margin-left:55px;
-      margin-top:310px;
+
       float: left;
   }
-  .a5 {
+  .footer-img-right {
       text-align: center;
       color:white;
-      margin-top:310px;
       margin-right: 55px;
       float: right;
   }
