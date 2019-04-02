@@ -1,0 +1,131 @@
+body{
+    background:white;
+    background-size: 100%;
+    margin: 0;}
+.b1{
+    height: 4rem;
+    background: #5fc0cd;
+   display: flex;
+    align-items: center;
+    color: white;
+    font-size: 27px;
+    justify-content: space-around;
+    margin-left: -14px;
+}
+.b2{
+
+}
+.b3{
+    display: flex;
+    width: 100%;
+    height:220px;
+    background:url("img/bjtp1.png")  no-repeat ;
+    background-size: 100% 100%;
+    align-items: center;
+    margin-top: -1px;
+}
+.b4{margin-left: 20px;
+}
+.b5{
+    margin-left: 16px;
+    color: #f7f7f7;
+}
+.c1{
+    font-size: 20px;
+}
+.c2{
+    font-size: 17px;}
+    .c3{
+        font-size: 13px;
+    }
+
+
+.b6{
+    margin-left: 15px;
+    color: #f7f7f7;
+    padding-top: 10px;
+}
+.b7{
+    height: 60px;
+    border-bottom: 1px solid #e1e5e7;
+    display: flex;
+    align-items: center;
+
+}
+.c4{border-left: 1px solid #5fc0cd ;
+    font-size: 20px;
+margin-left: 20px;
+    padding-left: 15px;
+}.b8{
+    display: flex;
+    height: 60px;
+     border-bottom: 1px solid #e1e5e7;
+ }
+ .c5{
+     padding-left:42px;
+ }
+ .b9{
+     display: flex;
+     height: 60px;
+     border-bottom: 1px solid #e1e5e7;
+     margin-left: 16px;
+ }
+ .c6{
+    display: flex;
+     margin-left: 15px;
+     font-size: 20px;
+     color: #cccccc;
+     align-items: center;
+     min-width:80px;
+ ;
+ }
+ .c7{
+     padding-left: 15px;
+     margin-left: 16px;
+     border-left: 1px solid #e1e5e7;
+ }
+ .c8{
+     padding-left: 15px;
+     margin-left: 16px;
+     border-left: 1px solid #e1e5e7;
+     color: red;
+     font-size: 22px;
+     display: flex;
+     align-items: center;
+
+ }
+ .c9{
+     display: flex;
+     align-items: center;
+     padding-left: 15px;
+     margin-left: 16px;
+     border-left: 1px solid #e1e5e7;
+     font-size: 13px;
+
+ }
+ .b10{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 160px;
+     padding-top: 35px;
+ }
+ .c10{
+     text-align: center;
+     height: 60px;
+     border: 1px solid #5fc0cd;
+     width: 140px;
+     line-height: 60px;
+     border-radius: 9%;
+     color:#5fc0cd
+ }
+ .c11{ text-align: center;
+     height: 60px;
+     border: 1px solid #5fc0cd;
+     width: 140px;
+     line-height: 60px;
+     background:#5fc0cd;
+     border-radius: 9%;
+     color: #ffffff;
+
+ }
