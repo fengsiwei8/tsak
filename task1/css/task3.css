@@ -24,43 +24,35 @@ body{margin: 0;
      font-size: 16px;
      right: 2%;}
  .img-iphone{
-     margin-top: 16px;
-     padding-left: 20px;
-     padding-top: 8px;
-     height: 52px;
-    background:  white;}
+    background:  white;
+     padding: 15px 0px}
  .img-iphone-number{
-     margin-top: 9px;
+     vertical-align: middle;
+     padding: 0 10px 0 14px;
+     height:27px;width:16px;
  }
  .input-number{
      outline: none;
      border: none;
-     width: 80%;
-     height: 32px;
-     margin-left: 70px;
      border-left: 2px solid #eaedee;
-     padding-top: 4px;
     }
 .img-key{
-    margin-top: 16px;
-    padding-left: 20px;
-    padding-top: 8px;
-    height: 52px;
-    background:  white;}
-.img-key-number{margin-top: 9px;}
+    padding: 15px 0px;
+    background:  white;
+    margin-top: 9px;}
+.img-key-number{
+    vertical-align: middle;
+    padding: 0 10px 0 14px;
+    height:27px; width: 16px;
+}
 
 .input-key{outline: none;
     border: none;
-    padding-top: 4px;
-    width: 80%;
-    height: 30px;
-    margin-left: 70px;
     border-left: 2px solid #eaedee;
 }
 .Sign-in{
     background: #5fc0cd;
     height: 64px;
-    width: 100%;
     text-align: center;
     line-height: 64px;
     color: white;
