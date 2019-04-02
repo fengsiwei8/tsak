@@ -29,6 +29,9 @@ body{margin: 0;
      padding-top: 8px;
      height: 52px;
     background:  white;}
+ .img-iphone-number{
+     margin-top: 9px;
+ }
  .input-number{
      outline: none;
      border: none;
@@ -38,13 +41,14 @@ body{margin: 0;
      border-left: 2px solid #eaedee;
      padding-top: 4px;
     }
-.img--key{
+.img-key{
     margin-top: 16px;
     padding-left: 20px;
     padding-top: 8px;
     height: 52px;
-    background:  white;
-}
+    background:  white;}
+.img-key-number{margin-top: 9px;}
+
 .input-key{outline: none;
     border: none;
     padding-top: 4px;
@@ -67,5 +71,5 @@ body{margin: 0;
     float: right;
     color: #5fc0cd;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 17px;
 }
