@@ -1,41 +1,35 @@
 body{margin: 0;
     background: #eff0f4;
 }
-.t1{
+.header{
     height: 6rem;
     width: 100%;
-    background: #5fc0cd;
-}
-.a2{
+    background: #5fc0cd;}
+.header-left{
     position: absolute;
     padding-top: 38px;
     left: 20px;
     color: white;
-    font-size: 20px;
-}
- .a3{
+    font-size: 16px;}
+ .header-mid{
      position: absolute;
      top: 38px;
      left: 47%;
      color: white;
-     font-size: 20px;
- }
- .a4{
+     font-size: 16px;}
+ .header-right{
      position: absolute;
      top: 38px;
      color: white;
-     font-size: 20px;
-     right: 2%;
- }
- .a5{
+     font-size: 16px;
+     right: 2%;}
+ .img-iphone{
      margin-top: 16px;
      padding-left: 20px;
      padding-top: 8px;
      height: 52px;
-    background:  white;
-
- }
- .a6{
+    background:  white;}
+ .input-number{
      outline: none;
      border: none;
      width: 80%;
@@ -44,15 +38,14 @@ body{margin: 0;
      border-left: 2px solid #eaedee;
      padding-top: 4px;
     }
-.a7{
+.img--key{
     margin-top: 16px;
     padding-left: 20px;
     padding-top: 8px;
     height: 52px;
     background:  white;
 }
-.a8{
-    outline: none;
+.input-key{outline: none;
     border: none;
     padding-top: 4px;
     width: 80%;
@@ -60,7 +53,7 @@ body{margin: 0;
     margin-left: 70px;
     border-left: 2px solid #eaedee;
 }
-.a9{
+.Sign-in{
     background: #5fc0cd;
     height: 64px;
     width: 100%;
@@ -70,7 +63,7 @@ body{margin: 0;
     margin-top: 50px;
     font-size: 20px;
 }
-.a10{
+.Forget-pass{
     float: right;
     color: #5fc0cd;
     margin-right: 20px;
