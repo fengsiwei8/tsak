@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-size: 100%;
+    border-bottom: 43px solid;
 }
 
 .header {
