@@ -1,0 +1,103 @@
+body{margin: 0;
+    background: #29bde0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: white;
+}
+.header-left{
+    padding-left: 5%;
+    height:24px;
+    width:24px;
+}
+.header-right{
+    padding-right: 5%;
+    height: 22px;
+    width: 22px;
+}
+.content-top{
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    font-size: 15px;
+    color: #464646;
+    background: #b9e9f5;
+}
+.content-right{
+    padding-right: 5%;
+    height: 35px;
+    width: 35px;
+}
+.click{
+    padding-left: 10%;
+    color: white}
+.content-mid{
+    text-align: center;
+    float: left;
+    margin: 6vw 2vw;
+    height: 26vw;
+    width: 28vw;
+    border: 2px solid white;
+}
+.id{
+    margin: 0;
+    height: 18vw;
+    line-height: 18vw;
+    background: #f5c97b;
+    color: white;
+}
+.number{
+    margin: 0;
+    background: #83b09a;
+    height: 8vw;
+    line-height: 8vw;
+}
+.footer{
+    position: fixed;
+    height: 48px;
+    width: 100%;
+    background: #29bde0;
+    text-align: center;
+    bottom: 0;
+    height: 48px;
+}
+.footer-mid{
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 20%;
+    width: 60%;
+    height: 48px;
+    background: #fbb435
+}
+
+
+.icon {
+    display: inline-block;
+    width: 100%;
+    height: 26%;
+    background-image: url(../img/css_sprites.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 84%;
+
+}
+
+
+/*.icon-1 {*/
+     /*background-position: -10px -10px ;*/
+ /*}*/
+/*.icon-2 {*/
+    /*background-position: -60px -10px ;*/
+/*}*/
+
+/*.icon-3 {*/
+    /*background-position: -110px -10px ;*/
+/*}*/
+/*.icon-4 {*/
+    /*background-position: -160px -10px ;*/
