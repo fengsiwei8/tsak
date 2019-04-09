@@ -52,7 +52,12 @@ body{
     font-size: 19px;
     background: #69d1e9;
 }
-.color{color: #919191;
+.simplify1{
+    color: white;
+    text-decoration: none;
+    }
+.color{
+    color: #919191;
     margin: 0px;
 }
 .content-img{

@@ -82,7 +82,9 @@ body{
     text-align: center;
     line-height: 60px;
     background: #f66f6f;
+    color: white;
     border-radius: 8px;
+    text-decoration: none;
 }
 .footer-down{
     height: 60px;
@@ -91,5 +93,7 @@ body{
     line-height: 60px;
     background: #fbb435;
     border-radius: 8px;
-
+    color: white;}
+.a1{
+    text-decoration:none;
 }

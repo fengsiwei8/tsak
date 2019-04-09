@@ -29,10 +29,17 @@ body{margin: 0;
     background: #b9e9f5;
 }
 .content-right{
-    padding-right: 5%;
+    position: absolute;
+    right: 64px;
     height: 35px;
     width: 35px;
 }
+.polygon{padding-left: 12vw;
+    display: block;
+    padding-top: 0;
+    height: 13px;
+    width: 15px;
+   }
 .click{
     padding-left: 10%;
     color: white}
@@ -75,29 +82,38 @@ body{margin: 0;
     height: 48px;
     background: #fbb435
 }
-
+.content-mid:hover .icon{opacity: 1}
 
 .icon {
-    display: inline-block;
-    width: 100%;
-    height: 26%;
+    display:inline-block;
+    width: 20%;
+    height: 138px;
     background-image: url(../img/css_sprites.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 84%;
-
+     opacity: 0;
+    background-size: 400%;
 }
-
-
-/*.icon-1 {*/
-     /*background-position: -10px -10px ;*/
- /*}*/
-/*.icon-2 {*/
-    /*background-position: -60px -10px ;*/
-/*}*/
-
-/*.icon-3 {*/
-    /*background-position: -110px -10px ;*/
-/*}*/
-/*.icon-4 {*/
-    /*background-position: -160px -10px ;*/
+.icon-1{
+    background-position: 100% 0;
+    display: inline-block;
+}
+.icon-2{
+    background-position: 65% 0;
+    display: inline-block;
+}
+.icon-3{
+    background-position: 0 0;
+    display: inline-block;
+}
+.icon-4{
+    background-position: 33.33% 0;
+    display: inline-block;
+}
+.a1{color: white}
+.audio{
+    opacity: 0;
+    width: 100px;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+}
