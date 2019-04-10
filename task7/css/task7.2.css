@@ -14,7 +14,7 @@ body{margin: 0;
     width:24px;
 }
 .header-right{
-    padding-right: 5%;
+    padding-right: 2%;
     height: 22px;
     width: 22px;
 }
@@ -24,7 +24,7 @@ body{margin: 0;
     justify-content: space-between;
     align-items: center;
     padding-left: 6%;
-    font-size: 15px;
+    font-size: 17px;
     color: #464646;
     background: #b9e9f5;
 }
