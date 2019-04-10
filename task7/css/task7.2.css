@@ -30,7 +30,7 @@ body{margin: 0;
 }
 .content-right{
     position: absolute;
-    right: 64px;
+    right: 12px;
     height: 35px;
     width: 35px;
 }
@@ -40,15 +40,19 @@ body{margin: 0;
     height: 13px;
     width: 15px;
    }
+.ys{
+    display: flex;
+    justify-content: space-between;
+
+}
 .click{
     padding-left: 10%;
     color: white}
 .content-mid{
     text-align: center;
-    float: left;
-    margin: 6vw 2vw;
+    margin: 5vw 3vw;
     height: 26vw;
-    width: 28vw;
+    width: 25vw;
     border: 2px solid white;
 }
 .id{
@@ -94,26 +98,27 @@ body{margin: 0;
     background-size: 400%;
 }
 .icon-1{
-    background-position: 100% 0;
+    background-position: 100% 12%;
     display: inline-block;
 }
 .icon-2{
-    background-position: 65% 0;
+    background-position: 65% 12%;
     display: inline-block;
 }
 .icon-3{
-    background-position: 0 0;
+    background-position: 0 12%;
     display: inline-block;
 }
 .icon-4{
-    background-position: 33.33% 0;
+    background-position: 33.33% 12%;
     display: inline-block;
 }
 .a1{color: white}
 .audio{
     opacity: 0;
-    width: 100px;
+    width: 160px;
     height: 33px;
     position: absolute;
-    right: 5px;
+    right:10px;
+    -webkit-transform: rotate(180deg);
 }

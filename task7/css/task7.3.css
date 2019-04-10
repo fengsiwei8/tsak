@@ -3,18 +3,22 @@ body{
     background-size: 100%;
     background:white;
     bottom:0px;
+    padding-bottom: 87px;
 }
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
     color: white;
     background: #29bde0;
     border-bottom: 1px solid #74d4eb;
 }
-.header-left{
+.header-img{
     width:35px
+}
+.header-left{
+    padding-left: 2%;
 }
 .header-right{
     width: 32px;
@@ -29,7 +33,8 @@ body{
     height: 123px;
 }
 .content-mid{
-    padding: 0 10%;
+    padding: 0 5%;
+    height: 78px;
     color: #ffc865;
     font-size: 20px;
     margin: 0;
@@ -37,12 +42,14 @@ body{
 }
 .game-time{
     margin: 9px 0;
-    padding-left:10%;
+    padding-left:5%;
     color: white;
     font-size: 17px;}
+.time{ display: flex;
+    justify-content: space-between;}
 .content-footer{
     display: flex;
-    padding-left: 10%;
+    padding-left: 5%;
     flex-flow: wrap;
     color: white;
 }
@@ -50,20 +57,23 @@ body{
 .background{background: #29bde0;}
 .ys{
     background: #ffffff;
+    font-size: 14px;
     border-bottom: 1px solid #dddddd;
 }
 .content-footer-top{
-    padding-left: 10%;
+    padding-left: 5%;
+    width: 40%;
     font-size: 17px;
      color: #515151}
 .footer-right{
-    padding-left: 152px;
+    width: 33.33%;
     font-size: 14px;
     color: #d5d5d5;
 }
 
 .footer-mid{
-    padding-left: 10%;
+    padding-left: 5%;
+    width: 100%;
     color: #a6a6a6;
 }
 .footer{
