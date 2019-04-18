@@ -264,16 +264,16 @@ opacity: 0.9;
 background-color: #3d3d3d;
 text-align: center;
 padding: 80px 40px;
-    -webkit-animation: cartoon 1s;
+    -webkit-animation: cartoon 4s;
 }
 
 
 @keyframes cartoon {
     0%
-       {background: url("../img/htl.jpg")no-repeat center;}
+    {background: url("../img/htl.jpg")no-repeat center;}
     25%  {background: url("../img/lyy.jpg")no-repeat center;}
     50%  {background: url("../img/myy.jpg")no-repeat center;}
-    100% {background: url("../img/htl.jpg")no-repeat center;}
+    100% {background: url("../img/xyy.jpg")no-repeat center;}
 
     0%{
         -webkit-transform: rotateX(0deg);
