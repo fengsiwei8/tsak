@@ -12,8 +12,11 @@ body{
 .header-left{
     display: flex;
     height: 30px;
+
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    font-size: 15px;
 }
 .header-img{
     width: 20px;
@@ -30,6 +33,7 @@ body{
         height: 30px;
         justify-content: flex-end;
         align-items: center;
+        width: 100%;
     }  }
 .header{
     display: flex;
@@ -126,7 +130,7 @@ ul{
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid #f9a372;;
     margin:5px;
 }
 li{
@@ -155,10 +159,10 @@ li{
     font-size: 15px;
      }
 li:hover{
-    color: red;
+    color: #f9a372;;
 }
 li:hover .main-left{
-    background: red;
+    background: #f9a372;;
 }
 @media (max-width: 980px){
    .main-right{
