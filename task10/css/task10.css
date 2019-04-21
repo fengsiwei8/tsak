@@ -1,0 +1,393 @@
+body{
+    margin: 0px;
+    background: #ffffff;
+}
+/*这是页头*/
+.header-top{
+    background: #1d7ad9;
+    font-size: 15px;
+}
+.iphone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.header-top-right{
+    display: flex;
+    font-size: 12px;
+    margin: 0;
+    align-items: center;
+    height: 30px;
+
+}
+.register{
+    padding: 8px 10px;
+    border-left: 1px solid white;
+}
+.sign{
+    padding: 8px 10px;
+    border-right: 1px solid white;
+
+}
+.register:hover {
+    width: 70px;
+    text-align: -webkit-center;
+    background: white;
+    color: black;
+}
+.sign:hover {
+    width: 70px;
+    text-align: -webkit-center;
+    background: white;
+    color: black;
+
+}
+/*以上是顶部*/
+/*以下是导航栏*/
+button{
+    outline: none!important;
+}
+.nav-link{
+
+    padding: .5rem.5rem ;
+    color: white;
+}
+ul>li>a{
+    color: black!important;
+    text-decoration: none ;
+}
+.nav-item {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    background-color: #fff;}
+.collapse {
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+.nav-item:hover {
+    text-decoration: none;
+    background: #1d7ad9;
+    color: white;
+}
+.navbar-nav{
+    text-align: center;
+}
+/*以下是Hover效果*/
+
+/*以上是导航栏*/
+/*以下主体*/
+/*以下main主体*/
+.main{
+    color: #bfbfc1;
+}
+.step{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    flex-flow: wrap;
+}
+.style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.style-left{
+    width: 50px;
+    height: 5px;
+    background: #ccc;
+}
+.style-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    color: white;
+    background:#ccc ;
+}
+.style-right{
+    width: 50px;
+    height: 5px;
+    background: #ccc;
+
+}
+.style-text{
+    margin: 24px 0;
+    text-align: center;
+    color: #ccc;
+}
+/*以下是hover效果*/
+.main-box:hover .style-left {
+    background:#ff7f02;}
+.main-box:hover .style-mid{
+    background:#ff7f02;}
+.main-box:hover .style-right{
+    background:#ff7f02;}
+.main-box:hover .style-text {
+    color: #ff7f02;
+}
+/*以上是hover效果*/
+/*以上main-top主体*/
+/*以下main-2主体*/
+.explain-tip{
+    border-left: 2px solid #1d7ad9;
+    color: #333333;
+    margin-bottom: 0;
+}
+/*以上main-2主体*/
+/*以下main-3主体*/
+.type{
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-size: 19px;
+    color: #1d7ad9;
+    border: 1px solid #e8e8e8;
+}
+.type-img{
+    margin: 0 9px;
+height: 19px;
+    width: 15px;
+}
+.kind {
+    margin: 0;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+/*以下公共样式input*/
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #ced4da;;
+    text-indent: .15em;
+    line-height: 1;
+}
+/*以下更改样式*/
+input[type="radio"]:checked + label::before {
+    background-color:white;
+    border: 5px solid #1d7ad9;
+    background-clip: content-box;
+    padding: .2em;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px ;
+}
+.select{
+    width:108px;
+    height: 41px;
+    color: #bfbfc1;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../img/m6-icon.png")no-repeat;
+    background-position: 72px 3px;
+    -webkit-appearance: none;
+}
+/*以上main-mid*/
+/*以下main-content*/
+.size{
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-size: 19px;
+    color: #1d7ad9;
+    border: 1px solid #e8e8e8;
+}
+.size-img {
+    margin: 0 9px;
+    height: 22px;
+    width: 20px;
+}
+.diameter{
+    margin: 0;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 ;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px ;
+
+}
+.input{
+    height: 30px;
+    width: 60px;
+}
+.length{
+    margin: 5px;
+}
+.millimeter{
+    margin-left: 5px;
+}
+.inner{
+    margin: 0;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px ;
+}
+.select-position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -21px;
+
+}
+.select-1{
+    width:108px;
+    height: 41px;
+    color: #bfbfc1;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../img/m6-icon.png")no-repeat;
+    background-position: 72px 3px;
+    -webkit-appearance: none;
+}
+@media (max-width: 992px){
+    .select-1 {
+        margin: 24px 0;
+    }
+}
+/*以上是main-content*/
+/*以下是plies主体*/
+.texture{ display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-size: 19px;
+    color: #1d7ad9;
+    border: 1px solid #e8e8e8;
+
+}
+.texture-img{
+    margin: 0 9px;
+    height:20px;
+    width:15px;
+}
+.plies{
+    margin: 0;
+    padding: 30px 0;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+.main-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+/*以上是plies主体*/
+/*以下是main-footer主体*/
+/*.main-6box{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    width: 230px;
+    height: 61px;
+    background: #e15053;
+    font-size: 20px;
+    color: white;
+    border-radius: 14px;
+}
+.footer-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+a{
+    text-decoration: none !important;
+}
+/*以上主体结束*/
+/*以下底部*/
+.footer{
+    display: flex;
+    color: #999;
+}
+.footer-top{
+    margin: 1rem 0;
+}
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-mid{
+    margin-bottom: 10px;
+}
+.footer-mid-text{
+    margin-right: 10px
+}
+@media (max-width: 991px) {
+    .footer-right {
+        display: block;
+        margin: 0;
+    }
+}
+.footer-text{
+    margin: 0;
+}
+.footer-bottom{
+    background: #1d7ad9;
+}
+.brand{
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+}
+/*以下是hover 效果*/
+.footer-mid-text:hover{
+    color: #3985db;
+}
+
