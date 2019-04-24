@@ -1,0 +1,9 @@
+body{overflow:hidden;}/*不明白去除下拉框是什么,就去掉了右侧的滚动条*/
+div.lefter{
+    background-color:#fea500;
+    margin:1.5%;
+    width:30.33%;
+    padding-bottom:30.33%;
+    height:0;
+    border-radius:10%;
+    float:left;}
