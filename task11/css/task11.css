@@ -2,7 +2,7 @@ body {
   min-width: 320px;
   max-width: 780px;
   margin: auto;
-  background: #f0f4f7; }
+  background: #ffffff; }
   body .header {
     display: flex;
     align-items: center;
@@ -10,22 +10,24 @@ body {
     background: #1a9ee4;
     font-size: 17px;
     color: white; }
-    body .header .img {
+    body .header img {
       padding-right: 30px;
       width: 29px; }
   body .main {
     height: 350px;
-    margin-top: 15px; }
-    body .main .input, body .main .input-footer {
+    padding-top: 15px;
+    background: #f0f4f7; }
+    body .main .input-box {
       display: flex;
       align-items: center;
       height: 40px;
       background: #ffffff; }
-      body .main .input .number, body .main .input-footer .number, body .main .input-footer .key {
-        height: 20px;
+      body .main .input-box input {
+        height: 10px;
         outline: none;
-        border: none; }
-      body .main .input .phone, body .main .input-footer .phone, body .main .input-footer .img {
+        border: none;
+        border-left: 1px solid #a9aebf; }
+      body .main .input-box img {
         padding: 0px 20px 0px 19px;
         height: 20px;
         width: 20px; }
@@ -45,24 +47,28 @@ body {
       height: 20px;
       color: #c5c6c8;
       font-size: 12px; }
-      body .main .tip .left {
-        padding-left: 5px; }
-      body .main .tip .right {
-        padding-right: 5px; }
-  body .footer .third {
-    line-height: 36px;
-    text-align: center;
-    height: 36px; }
-    body .footer .third .line {
-      display: inline-block;
-      width: 20%;
-      vertical-align: 5px;
-      border-top: 1px solid #cccccc; }
-  body .footer .footer-mid {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 35px; }
-    body .footer .footer-mid .img {
-      width: 50px; }
+      body .main .tip span {
+        margin: 0 10px; }
+  body .footer {
+    height: 447px;
+    background: #f0f4f7; }
+    body .footer .third {
+      line-height: 36px;
+      text-align: center;
+      height: 36px; }
+      body .footer .third span {
+        display: inline-block;
+        width: 20%;
+        vertical-align: 5px;
+        border-top: 1px solid #cccccc; }
+      body .footer .third p {
+        display: inline-block; }
+    body .footer .footer-mid {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 35px;
+      text-align: center; }
+      body .footer .footer-mid img {
+        width: 50px; }
 
 /*# sourceMappingURL=task11.css.map */
