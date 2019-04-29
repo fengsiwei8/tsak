@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: auto;
   max-width: 780px;
@@ -5,25 +6,22 @@ body {
 
 header {
   position: fixed;
-  min-width: 320px;
   max-width: 780px;
+  min-width: 320px;
   width: 100%;
   background-color: #29bde0; }
-  header h1 {
+  header .vote {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
     color: white; }
-    header h1 img {
-      padding-left: 15px;
+    header .vote img {
+      margin-left: 15px;
+      margin-right: 15px;
       height: 24px;
       width: 24px; }
-    header h1 .close {
-      padding-right: 20px;
-      height: 22px;
-      width: 22px; }
-  header h2 {
+  header .player {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,45 +31,49 @@ header {
     font-size: 17px;
     color: #464646;
     background: #b9e9f5; }
-    header h2 .audio {
+    header .player .audio {
       opacity: 0;
       width: 160px;
       height: 33px;
       position: absolute;
       right: 10px;
       -webkit-transform: rotate(180deg); }
-    header h2 .play {
+    header .player img {
       position: absolute;
       right: 14px;
       height: 35px;
       width: 35px; }
-  header img {
-    padding-left: 12vw;
-    display: block;
-    padding-top: 0;
-    height: 13px;
-    width: 15px; }
-  header h4 {
+  header .triangle {
+    width: 0;
+    height: 0;
+    border-width: 12px 7px 0;
+    border-style: solid;
+    border-color: #b9e9f5 transparent transparent;
+    /*灰 透明 透明 */
+    margin: 0 41px;
+    position: relative; }
+  header p {
     padding-left: 10%;
     color: white; }
 
 main {
   background-color: #29bde0;
-  padding-top: 210px; }
+  padding-top: 136px; }
   main .main-box {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px; }
-    main .main-box h1 {
+    padding-bottom: 20px;
+    margin: 5vw 2vw 5vw 2vw;
+    height: 31vw;
+    max-height: 190px; }
+    main .main-box .box {
       display: flex;
       flex-flow: wrap;
-      text-align: center;
-      width: 100%;
-      margin: 2vw 2vw;
-      height: 26vw;
       border: 2px solid white;
-      max-height: 190px; }
-      main .main-box h1 .id {
+      width: 100%;
+      margin: 0vw 2vw;
+      text-align: center; }
+      main .main-box .box .id {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,14 +83,17 @@ main {
         background: #f5c97b;
         font-size: 20px;
         color: #565656; }
-      main .main-box h1 .number {
+      main .main-box .box .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0;
         background: #83b09a;
         height: 30%;
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         color: white; }
-      main .main-box h1:hover .icon {
+      main .main-box .box:hover .icon {
         opacity: 1; }
     main .main-box .icon {
       display: inline-block;
@@ -99,17 +104,19 @@ main {
       opacity: 0;
       background-size: 400%; }
     main .main-box .icon-1 {
-      background-position: 100% 12%;
+      background-position: 100% 37%;
       display: inline-block; }
     main .main-box .icon-2 {
-      background-position: 65% 12%;
+      background-position: 65% 37%;
       display: inline-block; }
     main .main-box .icon-3 {
-      background-position: 0 12%;
+      background-position: 0 37%;
       display: inline-block; }
     main .main-box .icon-4 {
-      background-position: 33.33% 12%;
+      background-position: 33.33% 37%;
       display: inline-block; }
+  main .empty {
+    height: 11vh; }
 
 footer {
   position: fixed;

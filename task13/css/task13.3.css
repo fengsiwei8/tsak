@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 780px;
   min-width: 320px;
@@ -51,35 +52,38 @@ main .main-box {
     color: white; }
     main .main-box .identity span {
       flex: 0 1 33.33%; }
-main .ys {
+main .day {
   background: #ffffff;
   font-size: 14px;
   border-bottom: 1px solid #dddddd; }
-  main .ys span {
+  main .day span {
     padding-left: 5%;
-    width: 40%;
     font-size: 17px;
     color: #515151; }
-  main .ys .time {
-    width: 33.33%;
-    font-size: 14px;
-    color: #d5d5d5; }
-  main .ys p {
+  main .day .hour {
+    padding-left: 58%;
+    color: #d5d5d5;
+    font-size: 14px; }
+  main .day p {
     padding-left: 5%;
     width: 95%;
     color: #a6a6a6; }
 
+/*以上主体*/
 footer {
   display: flex;
   align-items: center;
   max-width: 780px;
   min-width: 320px;
+  justify-content: space-evenly;
   position: fixed;
+  /*固定定位*/
   bottom: 0;
   width: 100%;
   height: 86px;
   justify-content: space-evenly;
-  background-color: rgba(155, 223, 240, 0.5); }
+  background-color: rgba(155, 223, 240, 0.5);
+  /*透明度rgba*/ }
   footer a {
     height: 60px;
     width: 35%;
