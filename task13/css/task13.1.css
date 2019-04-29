@@ -137,7 +137,7 @@ header {
     .versions footer span {
       width: 15px;
       height: 15px;
-      margin-left: 5px;
+      margin: 5px;
       border-radius: 50%;
       background: #f0f0f0;
       /*底部4个圆点*/ }

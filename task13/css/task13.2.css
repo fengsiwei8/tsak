@@ -63,7 +63,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-    margin: 5vw 2vw 5vw 2vw;
+    margin: 5vw 0vw;
     height: 31vw;
     max-height: 190px; }
     main .main-box .box {
