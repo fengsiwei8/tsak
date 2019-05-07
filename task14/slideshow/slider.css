@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.carousel {
+  width: 100%; }
+  .carousel #picture1, .carousel #picture2, .carousel #picture3 {
+    display: none; }
+  .carousel #mid {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /*主容器设置宽度100%溢出隐藏*/
+    /*圆点属性*/ }
+    .carousel #mid #picture {
+      margin-left: 0;
+      width: 500%;
+      /*图片容器设置宽度500%*/
+      /*图片设置宽度20%左浮动，高度30视窗高度*/ }
+      .carousel #mid #picture img {
+        width: 20%;
+        margin-top: -1px;
+        height: 25vw;
+        float: left; }
+      .carousel #mid #picture ul {
+        list-style: none; }
+    .carousel #mid #triangle {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      top: 84%;
+      /*下面三个圆点主容器定位*/ }
+      .carousel #mid #triangle label {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
+        border: 1px solid #d0d6d9;
+        cursor: pointer; }
+    .carousel #mid #box4 {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid #e7e7e7;
+      border-right: 5px solid #e7e7e7;
+      cursor: pointer;
+      transform: rotate(-133deg); }
+    .carousel #mid #box5 {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid #e7e7e7;
+      border-right: 5px solid #e7e7e7;
+      cursor: pointer;
+      transform: rotate(45deg); }
+    .carousel #mid #box6 {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid #e7e7e7;
+      border-right: 5px solid #e7e7e7;
+      cursor: pointer;
+      transform: rotate(-133deg); }
+
+/*左右三个箭头的属性*/
+#mid #triangle label:hover {
+  background: #d0d6d9; }
+
+/*Hover效果*/
+#picture1:checked ~ #mid #picture {
+  margin-left: 0; }
+
+#picture2:checked ~ #mid #picture {
+  margin-left: -100%; }
+
+#picture3:checked ~ #mid #picture {
+  margin-left: -200%; }
+
+/*轮播图的重要控制*/
+#picture1:checked ~ #mid #box1 {
+  background-color: #d0d6d9; }
+
+#picture2:checked ~ #mid #box2 {
+  background-color: #d0d6d9; }
+
+#picture3:checked ~ #mid #box3 {
+  background-color: #d0d6d9; }
+
+#picture1:checked ~ #mid #box5 {
+  display: block;
+  cursor: pointer;
+  left: 90%; }
+
+#picture1:checked ~ #mid #box6 {
+  display: block;
+  cursor: pointer; }
+
+#picture2:checked ~ #mid #box4 {
+  display: block;
+  cursor: pointer; }
+
+#picture2:checked ~ #mid #box6 {
+  left: 90%;
+  display: block;
+  cursor: pointer;
+  transform: rotate(45deg); }
+
+#picture3:checked ~ #mid #box5 {
+  display: block;
+  cursor: pointer;
+  left: 8%;
+  transform: rotate(-133deg); }
+
+#picture3:checked ~ #mid #box4 {
+  display: block;
+  cursor: pointer;
+  left: 90%;
+  transform: rotate(45deg); }
+
+label {
+  cursor: pointer;
+  display: inline-block; }
+
+/*# sourceMappingURL=slider.css.map */
