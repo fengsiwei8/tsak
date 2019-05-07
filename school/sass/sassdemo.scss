@@ -1,0 +1,51 @@
+$color:red;
+$border:1px solid $color;
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+
+body{
+  margin:0 ;
+
+}
+header {
+  .demo {
+    background: #3e8e41;
+    border: $border;
+
+    p {
+      color: $color;
+    }
+  }
+
+  .test {
+    @extend .demo;
+  }
+}
+  main {
+    .test {
+      @extend .demo;
+
+    }
+  }
+
+ul.plain {
+  color: #444;
+  list-style: none;
+}
+@mixin no-bullets {
+  list-style: none;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }}
+ul.plain li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
