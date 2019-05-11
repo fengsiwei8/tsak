@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/改变样式和内容.css">
+    <style>
+box2{
+    background: red;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    你好啊静儿
+</div>
+<div class="box">
+</div>
+
+<div class="button"></div>
+<script>
+    // var obox = document.getElementById("box");
+    // var obox1 =document.getElementById("box1");
+    // // obox.innerHTML = obox.innerHTML +"hellow 爱你。";
+    // // 下面是缩写
+    // // obox.innerHTML +="hellow 爱你";
+    // // obox.onclick = function () {
+    // //     this.innerHTML = "I Love You.";
+    // // }
+    // // obox.style.background ="red";
+    // obox1.onclick = function () {
+    //     obox.style.background="red";
+    // }
+    var button = document.getElementsByClassName("button");
+    var obox = document.getElementsByClassName("box");
+    button[0] .onclick = function () {
+        obox [0] .style.background = "red";
+        obox [1].style.background = "red";
+    }
+    console.log(button);
+    </script>
+</body>
+</html>

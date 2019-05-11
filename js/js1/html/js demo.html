@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+
+<div id="box">
+    点我试试
+<!--    <p class="test">-->
+<!--    </p>-->
+<!--    <p class="test">-->
+
+<!--    </p>-->
+</div>
+<!--<p class="box2"></p>-->
+<!--<div id="box3">-->
+</div>
+<script>
+    var  obox = document.getElementById("box");
+    obox.onclick = function() {
+        this.innerHTML = "<a href='https://www.baidu.com';> 百度一下"
+    };
+    // document.getElementById("box").innerHTML = "hi word";
+    // 通过id获取元素
+    // 改变元素的html内容
+    //     .innerHTML
+    // document.getElementsByClassName("box2")[0].innerHTML = "hi word";
+    // 获取的是一个集合，要拿出对应的某个才能继续使用
+    // document.querySelector("box .test").innerHTML = " hi word"
+    // 只会选中第一个
+    // document.querySelectorAll(".test")[0].innerHTML = " 我是帅哥";
+    // document.querySelectorAll(".test")[1].innerHTML = " hi word";
+    // 获取选择器所有的集合
+    // 通过选择器写法来获取元素
+    // document.getElementsByTagName("p")[0] .innerHTML = "我好帅";
+    // 通过标签名获取元素集合
+    // document.getElementsByName()
+    // name不要乱用 表单 lable a标签等 通过name获取元素也是集合
+    // .getElement之前必须是document
+    // document.getElementById("box").getElementsByTagName("p") [0].innerHTML = "hi";
+    // 注册点击事件 通过函数
+    // document.getElementById("box3").onclick = function(){
+    //     alert( "hellow word!")
+    // };
+    // document.getElementById("box").onmouseenter = function(){
+    //     alert("hellow word")
+    // };
+    // document.getElementById("box").onmouseleave = function(){
+    //     alert("hi word")
+    // };
+    // document.getElementById("box3").onclick = hi;
+    // // 匿名函数 有名函数 函数可以自执行
+    //     function hi(){
+    //     alert( "hellow word!");
+    // }
+    // 事件的分类：鼠标事件  键盘事件系统事件 表单事件
+    // onclick / ondblclick /onmouseover/onmouseout   onmouseenter /onmouseleave
+    // 单击事件 双击事件   鼠标移入 鼠标移出     鼠标移入 鼠标移出
+   //  var x=document.getElementById("box");
+   //  // 可以用var定义
+   //  // document.getElementById("box").onclick = function(){
+   //  //     this.innerHTML = ""
+   //  // }
+   //  x.onclick = function(){
+   //      // document.getElementById("box").innerHTML = "hellow word!";
+   //      this.innerHTML = "hellow word";
+   //  };
+   // x.onmouseover = function(){
+   //      this.innerHTML= "鼠标移入"
+   //  };
+   //  x.onmouseout = function(){
+   //      this.innerHTML = ""
+   //  }
+   //  // 定义变量
+
+</script>
+</body>
+</html>
