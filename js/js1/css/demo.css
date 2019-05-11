@@ -1,0 +1,18 @@
+#box {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  background: pink;
+  cursor: default; }
+  #box a {
+    color: white;
+    text-decoration: none; }
+
+#box3 {
+  width: 200px;
+  height: 50px;
+  background: pink; }
+
+/*# sourceMappingURL=demo.css.map */

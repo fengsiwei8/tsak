@@ -1,0 +1,40 @@
+body {
+  margin: 0; }
+
+.box {
+  height: 30vw;
+  width: 29.1vw;
+  background-color: orange;
+  float: left;
+  border-radius: 20%;
+  margin: 1vw; }
+
+#start {
+  float: left;
+  margin: 5px 0 5px 5px;
+  height: 8vw;
+  width: 95%;
+  text-align: center;
+  line-height: 8vw;
+  color: aqua;
+  border-radius: 5px;
+  border: 1px solid orange; }
+
+#start:hover {
+  background-color: orange; }
+
+#end {
+  float: left;
+  height: 8vw;
+  width: 95%;
+  margin: 5px 0 5px 5px;
+  text-align: center;
+  line-height: 8vw;
+  color: orange;
+  border-radius: 5px;
+  border: 1px solid orange; }
+
+#end:hover {
+  background-color: orange; }
+
+/*# sourceMappingURL=js1.css.map */
