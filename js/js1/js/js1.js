@@ -35,8 +35,8 @@ function change() {
             var two = x[b].style.background = colors();
             var zhree = x [c].style.background = colors();
         }
-    },1000)
-    document.getElementById("start").disabled = "true";
+    },1000);
+    document.getElementById("start").disabled=true;
 }
 // 设置重置
 function end() {
@@ -44,7 +44,7 @@ function end() {
         x[d].style.backgroundColor = "#ffa500"; //恢复默认颜色
     };
     clearInterval(time); //去除延时
-document.getElementById("start").disabled = "false";
+document.getElementById("start").disabled = false;
 }
 // var time;
 // function change() {

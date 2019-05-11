@@ -17,6 +17,7 @@ body {
   text-align: center;
   line-height: 8vw;
   color: aqua;
+  background: white;
   border-radius: 5px;
   border: 1px solid orange; }
 
@@ -31,6 +32,7 @@ body {
   text-align: center;
   line-height: 8vw;
   color: orange;
+  background: white;
   border-radius: 5px;
   border: 1px solid orange; }
 
