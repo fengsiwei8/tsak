@@ -1,0 +1,140 @@
+body {
+  margin: auto;
+  min-width: 320px;
+  max-width: 780px;
+  background-size: 100%;
+  border-bottom: 78px solid; }
+  body header {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    min-width: 320px;
+    max-width: 780px;
+    top: 0;
+    height: 3rem;
+    background: #5fc0cd; }
+    body header .header-left {
+      text-align: center;
+      line-height: 34px;
+      width: 100px;
+      border-radius: 5px;
+      border: 1px solid #55a8b3;
+      color: white;
+      background: #55a8b3; }
+    body header .header-mid {
+      text-align: center;
+      line-height: 34px;
+      width: 100px;
+      border-radius: 5px;
+      margin-left: -5px;
+      color: #5fc0cd;
+      background: #ffffff;
+      border: 1px solid white; }
+    body header img {
+      position: absolute;
+      right: 20px;
+      height: 20px;
+      width: 19px; }
+  body main .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    height: 42px;
+    font-size: 12px;
+    border-bottom: 1px solid #e1e5e7; }
+    body main .content .a {
+      border-right: none !important; }
+    body main .content span {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      border-right: 1px solid #e1e5e7; }
+      body main .content span ul {
+        display: none;
+        list-style: none;
+        position: absolute;
+        padding: 0;
+        margin: 65px 1px 0 0;
+        text-align: center;
+        line-height: 29px;
+        height: 85px;
+        width: 33.33%;
+        max-width: 260px;
+        background-color: white;
+        box-shadow: 2px 4px 20px 5px #5595b373; }
+      body main .content span:hover ul {
+        display: block; }
+    body main .content img {
+      padding-left: 24px;
+      height: 8px;
+      width: 10px; }
+  body main .tip {
+    border-bottom: 1px solid #e1e5e7; }
+    body main .tip .time {
+      display: flex;
+      align-items: center;
+      padding: 13px 16px 0px 10px;
+      font-size: 13px; }
+      body main .tip .time img {
+        height: 17px;
+        width: 17px;
+        margin: 0 10px; }
+    body main .tip p {
+      padding-left: 17px;
+      display: inline;
+      font-size: 14px; }
+    body main .tip .right {
+      float: right;
+      color: red; }
+      body main .tip .right img {
+        display: inline;
+        height: 15px;
+        width: 12px;
+        padding-right: 5px; }
+    body main .tip .site {
+      display: flex;
+      align-items: center;
+      padding-bottom: 15px;
+      font-size: 13px; }
+      body main .tip .site img {
+        padding-left: 10px;
+        margin: 0 10px;
+        height: 15px;
+        width: 13px; }
+  body footer {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    min-width: 320px;
+    max-width: 780px;
+    bottom: 0;
+    background: white;
+    border-top: 1px solid #e1e5e7;
+    text-align: -webkit-center; }
+    body footer a {
+      text-decoration: none; }
+    body footer img {
+      height: 50%;
+      width: 50%; }
+    body footer span {
+      display: block;
+      font-size: 12px;
+      color: #5fc0cd; }
+    body footer .footer-mid {
+      padding-top: 5px;
+      height: 70px;
+      width: 70px; }
+    body footer p {
+      margin: 0;
+      font-size: 12px;
+      color: #9f9f9f; }
+
+/*# sourceMappingURL=task12.1.css.map */
