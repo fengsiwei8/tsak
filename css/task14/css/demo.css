@@ -1,0 +1,44 @@
+body {
+  margin: 0px; }
+
+header nav input {
+  display: none; }
+header nav label {
+  float: right;
+  display: block;
+  width: 2.2rem;
+  padding-bottom: 2px;
+  border: 0.1rem solid;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  background: #29b078;
+  cursor: pointer; }
+header nav ul {
+  margin: 0 -15px 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #29b078;
+  list-style: none; }
+  header nav ul li {
+    display: inline-block; }
+@media screen and (max-width: 991px) {
+  header ul {
+    width: 100%;
+    margin: 0;
+    height: 0; } }
+@media screen and (min-width: 991px) {
+  header nav > label {
+    display: none; } }
+@media screen and (max-width: 991px) {
+  header nav > ul > li {
+    display: block;
+    text-align: center; } }
+@media screen and (max-width: 991px) {
+  header nav > input:checked ~ ul {
+    margin: 0;
+    height: auto !important; } }
+
+/*# sourceMappingURL=demo.css.map */
