@@ -1,5 +1,35 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var x = document.getElementsByClassName("box");
 
 function colors() {//rgb颜色随机
@@ -12,10 +42,10 @@ function colors() {//rgb颜色随机
     // 把颜色赋值给函数
 
 }
+
 var time;
 function change() {
     time = setInterval(function () {
-
         for (var i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "#ffa500"; //每次获取随机颜色后恢复默认颜色
         }
@@ -46,8 +76,8 @@ function end() {
     clearInterval(time); //去除延时
 document.getElementById("start").disabled = false;
 }
-// var time;
-// function change() {
+// // var time;
+// // function change() {
 //     time = setInterval(function () {
 //         for (var i = 0; i < x.length; i++) {
 //             x[i].style.backgroundColor = "#ffa500"; //每次获取随机颜色后恢复默认颜色

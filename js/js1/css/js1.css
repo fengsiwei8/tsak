@@ -40,4 +40,17 @@ body {
   color: white;
   background-color: orange; }
 
+a {
+  float: left;
+  height: 8vw;
+  width: 95%;
+  margin: 5px 0 5px 5px;
+  text-align: center;
+  line-height: 8vw;
+  color: orange;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+  text-decoration: none; }
+
 /*# sourceMappingURL=js1.css.map */
