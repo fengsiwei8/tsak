@@ -49,13 +49,14 @@ function change() {
         for (var i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "#ffa500"; //每次获取随机颜色后恢复默认颜色
         }
-        for (; a == b || b == c || c == a;) {//当abc有任意两个相等，就开始运行，直到没有相等。选择三个不相同的随机数
+        for ( ;a == b || b == c || c == a ;) {//当abc有任意两个相等，就开始运行，直到没有相等。选择三个不相同的随机数
             var a = Math.floor(Math.random() * 9);
             var b = Math.floor(Math.random() * 9);
             var c = Math.floor(Math.random() * 9);
             // x[a].style.background =colors();
             // x[b].style.background =colors();
             // x[c].style.background =colors();
+            console.log(a,b,c);
         }
         // x[a].style.background =colors();
         // x[b].style.background =colors();
@@ -65,6 +66,7 @@ function change() {
             var two = x[b].style.background = colors();
             var zhree = x [c].style.background = colors();
         }
+
     },1000);
     document.getElementById("start").disabled=true;
 }
@@ -75,7 +77,7 @@ function end() {
     };
     clearInterval(time); //去除延时
 document.getElementById("start").disabled = false;
-}
+};
 // // var time;
 // // function change() {
 //     time = setInterval(function () {
