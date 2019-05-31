@@ -49,6 +49,12 @@ main {
 
     .cup {
       text-align: center;
+      #result{
+        position: absolute;
+        top: 19.5vh;
+        left: 43vw;
+        color: pink;
+      }
 
       img {
         width: 175px;

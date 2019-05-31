@@ -29,6 +29,11 @@ main {
     background: #29bde0; }
     main .main-box .cup {
       text-align: center; }
+      main .main-box .cup #result {
+        position: absolute;
+        top: 19.5vh;
+        left: 43vw;
+        color: pink; }
       main .main-box .cup img {
         width: 175px;
         height: 123px; }

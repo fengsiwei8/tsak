@@ -19,6 +19,7 @@ header {
   font-size: 22px;
   background: #29bde0; }
   header img {
+    cursor: pointer;
     height: 41px;
     width: 25px;
     padding-left: 1rem; }
@@ -126,6 +127,7 @@ footer {
   height: 5rem;
   color: #ffffff;
   background: #fab344;
+  border-radius: 7px;
   cursor: pointer; }
 
 /*# sourceMappingURL=js2.1.css.map */

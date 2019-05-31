@@ -1,79 +1,13 @@
-// var player_number = document.getElementById("player");
-// console.log(player_number);
-// //定义一个变量获得玩家的人数
-//
-// var slider_number = document.getElementById('slider');
-//定义一个变量获得滑块的值
-// function plus() {
-//     player_number.value++;
-//     //点击value+1
-//     if (player_number.value > 18) {
-//         //如果人数大于18
-//         alert("人数太多啦")
-//         //弹窗
-//     }
-//     else {
-//         slider_number.value = player_number.value
-//         //如果人数value值不大于18 就赋值给滑动块
-//     }
-//     num();
-// };
-// function less() {
-//     player_number.value--;
-//     //点击-号运行函数less然后 player_number.value减1
-//     if (player_number.value< 4){
-//         //如果人数少于4人
-//         alert("人数太少了")
-//         //弹窗
-//     }
-//     else {
-//         slider_number.value = player_number.value;
-//         // document.getElementById("asdasfdf").innerHTML = player_number.value;
-//     }
-//
-//     num();
-//     //反之把人数的value赋值给滑动块的value
-// };
-// function on_change() {
-//     if (player_number.value >= 4 && player_number.value <= 18) {//设置方框里面玩家人数范围
-//         slider_number.value=player_number.value ;//将玩家总人数赋值给滑块的值，实现动态变化
-//     } else {
-//         alert("请输入正确的人数4~18");
-//         player_number.value=4;
-//         slider_number.value=4;
-//         //人数超出范围的话，弹出警告框，并且将方框和滑块的值重置为6
-//     }
-//     num();
-// };
-// function moveChange() {// 滑块的值改变，运行这个函数
-//    player_number.value = slider_number.value;
-//     //滑块的值改变的话，滑块的值赋值给方框，实现动态变化
-//     num();
-// };
-// function num() {
-//     a = document.getElementById("slider").value;
-//     console.log(a)
-//     kill_num = Math.ceil(a/5);
-//     quantity_num = a - kill_num;
-//     console.log( quantity_num );
-//     document.getElementById("kill_num").innerHTML =  kill_num;
-//     document.getElementById("quantity_num").innerHTML =  quantity_num;
-//     // return kill_num;
-// };
 
-// num()
-// function minPlayerNum(playerNum) {
-//     killerNum = Math.ceil(playerNum/5);
-//     civilianNum = playerNum-killerNum;
-//     document.getElementById("killerNum").innerHTML=killerNum;
-//     document.getElementById("civilianNum").innerHTML= civilianNum ;
-//     return killerNum;
-// }
+
 var player_num = document.getElementById("player");
-//设置一个变量使它获得player的属性 为什么不获得它的value值是因为下面value是变动的
+//设置一个变量使它获得input  idp layer的属性 为什么不获得它的value值是因为下面value是变动的
 
 var slider_num = document.getElementById("slider");
 //设置一个变量使它获得player的属性 为什么不获得它的value值是因为下面value是变动的
+function getBack() {
+    window.location.href="js2.0.html";
+};
 function less() {//点击减少
     player_num.value--;
     //点击player_num.value--的value值减少1
@@ -93,7 +27,6 @@ function less() {//点击减少
     }
     num();
 };
-
 function plus() {
     player_num.value++;
     //点击player_num.value--的value值减少1
@@ -111,6 +44,7 @@ function plus() {
         player_num.value = 18;
         //把滑块的value值设置为默认18
     }
+    num();
 }
 
 function moveChange() {//滑动块事件
@@ -162,7 +96,7 @@ function num() {
     //创建一个数组  square
     play = kill.concat(square);
     //合并数组
-    // console.log(play);
+    console.log(play);
     shuffle();
     return kill_num;
 
@@ -173,7 +107,7 @@ function num() {
     // console.log(square);
     // var player = kill.concat(square);
 
-function shuffle() {
+function shuffle() {//洗牌算法
     //定义一个空数组。
     copy = [];
     //n=数组长度
@@ -188,8 +122,9 @@ function shuffle() {
         // if (i in array) {
         copy.push(play[i]);
         // delete array[i];   //没用
-        play.splice(i, 1);
-        n--;
+        play.splice(i, 1);//把i从play数组里拿出来 然后位数-1
+        n--;//循环次数n-1
+
     }
     console.log(copy);
 
@@ -204,51 +139,7 @@ function shuffle() {
 function skip() {
 
     window.location.href="js3.html";
-};
-
-
-
-
-// var oPlayerNum = document.getElementById("player");//玩家总人数
-// var osliderBlock = document.getElementById("slider");//滑块的值
-// function on_change() {
-//     if (oPlayerNum.value >= 4 && oPlayerNum.value <= 18) {//设置方框里面玩家人数范围
-//         osliderBlock.value=oPlayerNum.value ;//将玩家总人数赋值给滑块的值，实现动态变化
-//     } else {
-//         alert("请输入正确的人数4~18");
-//         oPlayerNum.value=4;
-//         osliderBlock.value=4;
-//         //人数超出范围的话，弹出警告框，并且将方框和滑块的值重置为6
-//     }
-// }
-// function moveChange() {// 滑块的值改变，运行这个函数
-//     oPlayerNum.value=osliderBlock.value;
-//     //滑块的值改变的话，滑块的值赋值给方框，实现动态变化
-// }
-// function less() {
-//     oPlayerNum.value--;
-//     //减的按钮，减掉玩家总人数的值
-//     if (oPlayerNum.value<4){
-//         alert("人太少了，再找几个小伙伴来吧");
-//         oPlayerNum.value=4;
-//         //人数超出范围的话，弹出警告框，并且将方框和滑块的值重置为6
-//     }
-//     else {
-//         osliderBlock.value=oPlayerNum.value;// 将玩家人数赋值给滑轮的值
-//     }
-// }
-// function plus() {
-//     oPlayerNum.value++;
-//     //加的按钮，减掉玩家总人数的值，上面的值已经相互关联了，所以方框的值改变，滑块的值也会改变
-//     if (oPlayerNum.value>18){
-//         alert("人太多了，可以分一批人再开一局");
-//         oPlayerNum.value=18;
-//         //人数超出范围的话，弹出警告框，并且将方框和滑块的值重置为18
-//     }
-//     else {
-//         osliderBlock.value=oPlayerNum.value;// 将玩家人数赋值给滑轮的值
-//     }
-// }
+};//页面跳转到下一个页面
 
 
 

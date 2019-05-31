@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <img src="../img/less_ Icon.png"/>
+    <img onclick="getBack()" class="return" src="../img/less_ Icon.png"/>
     <span>
         参数配置
     </span>
@@ -71,7 +71,9 @@
                    onafterpaste="this.value=this.value.replace(/\D/g,'')"
                    onblur="on_change()">
             <!--                   把输入的非数字替换为空-->
-<!--            失去焦点-->
+<!--           很明显根据词译“onkeyup”=按键抬起触发，“onafterpaste”=粘贴之后触发，
+整体的意思是用于限制只能输入数字的
+ onblur失去焦点-->
 
         <span>人</span>
         </div>
@@ -84,6 +86,7 @@
             <button id="add" onclick="plus()">
                 +
             </button>
+<!--            onchange 事件会在域的内容改变时发生。-->
         </div>
     </div>
 </main>

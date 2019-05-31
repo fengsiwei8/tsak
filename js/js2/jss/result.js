@@ -19,22 +19,58 @@ for(var i=1;i<playDay;i++) {//模板字符串playDay是游戏天数
  
     `
     );
-}
+};
 
-        var livePeople = 0;//var一个活着的平民的变量把0赋值给它
-        var liveKill = 0;//var一个活着的杀手的变量把0赋值给它
-        for (i = 0; i < player.length; i++) {//循环
-            if (player[i].state == "live") {//先判断它的生死状态
-                if (player[i].name == "平民") {//再判断它是不是平民
-                    livePeople += 1;//是就+1
-                    console.log("活着的平民数" + livePeople);
-                } else {//否则的话
-                    liveKill += 1;//杀手人数+1
-                }
+function judge() {
+    var livePeople = 0;//var一个活着的平民的变量把0赋值给它
+    var liveKill = 0;//var一个活着的杀手的变量把0赋值给它
+    for (i = 0; i < player.length; i++) {//循环
+        if (player[i].state == "live") {//先判断它的生死状态
+            if (player[i].name == "平民") {//再判断它是不是平民
+                livePeople += 1;//是就+1
+                console.log("活着的平民数" + livePeople);
+            } else {//否则的话
+                liveKill += 1;//杀手人数+1
+
+                console.log("活着的杀手数" + liveKill);
             }
         }
-$("#kill").text(liveKill);
-$("#people").text(livePeople);
+    }
+    $("#kill").text(liveKill);
+    $("#people").text(livePeople);
+    console.log("活着的杀手数" + liveKill);
+    if (liveKill == 0) {//如果杀手人数等于0
+        $("#result").text("平民胜利");
+
+    } else {//如果杀手人数不等于0再进行判断
+        if (liveKill == livePeople) {//如果杀手等于平民
+            $("#result").text("杀手胜利");
+        }
+    }
+}
+    judge();
+
+
+
+
+
+
+
+        //
+        // var livePeople = 0;//var一个活着的平民的变量把0赋值给它
+        // var liveKill = 0;//var一个活着的杀手的变量把0赋值给它
+        // for (i = 0; i < player.length; i++) {//循环
+        //     if (player[i].state == "live") {//先判断它的生死状态
+        //         if (player[i].name == "平民") {//再判断它是不是平民
+        //             livePeople += 1;//是就+1
+        //             console.log("活着的平民数" + livePeople);
+        //         } else {//否则的话
+        //             liveKill += 1;//杀手人数+1
+        //         }
+        //     }
+        // }
+// $("#kill").text(liveKill);
+// $("#people").text(livePeople);
 
 for (i=0;i<player.length;i++) {//循环遍历整个数组
     //做下面的是要做一个day-i的类名
