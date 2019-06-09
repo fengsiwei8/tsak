@@ -131,7 +131,7 @@ for(var i=1;i<=playDay;i++){//模板字符串playDay是游戏天数
 
 
     `)
-}
+};
 
 
 
@@ -193,18 +193,15 @@ for (i=0;i<player.length;i++) {//循环遍历整个数组
         $("."+ deathClassName).children().find(".tip").text( +[i+1]+ "号被投票投死真实身份是"+player[i].name);
     }
 
-}
-
-
-
+};
 
 
 $(".ghost").click(function () {//点击死人发言
     if (gameProcess===1){
         alert("请死掉的煞笔说话")
         gameProcess = 2 ;
-        $(".ghost").css({"opacity":"0.5"});//改变他的透明度
-        sessionStorage.setItem("time",JSON.stringify(gameProcess));
+        $(".ghost").css({"opacity":".5"});//改变他的透明度
+        // sessionStorage.setItem("time",JSON.stringify(gameProcess));
         console.log(gameProcess);
     }else
         {
@@ -218,7 +215,7 @@ $(".player").click(function () {//点击死人发言
         alert("请活着的天才说话")
         gameProcess = 3 ;
         $(".player").css({"opacity":"0.5"});//改变他的透明度
-        sessionStorage.setItem("time",JSON.stringify(gameProcess));
+        // sessionStorage.setItem("time",JSON.stringify(gameProcess));
         console.log(gameProcess);
     }else
     {

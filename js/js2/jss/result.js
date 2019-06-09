@@ -6,10 +6,10 @@ gameProcess = JSON.parse(sessionStorage.getItem("time"));//读取到传送的默
 console.log(gameProcess);
 
 
-for(var i=1;i<playDay;i++) {//模板字符串playDay是游戏天数
+for(var i=0;i<playDay;i++) {//模板字符串playDay是游戏天数
     $("main").append(`
-<div class="day-${i}">
-    <div class="day">第${i}天
+<div class="day-${i+1}">
+    <div class="day">第${i+1}天
  
 </div>
 <p class="moon"></p>
@@ -28,6 +28,9 @@ function judge() {
         if (player[i].state == "live") {//先判断它的生死状态
             if (player[i].name == "平民") {//再判断它是不是平民
                 livePeople += 1;//是就+1
+
+
+
                 console.log("活着的平民数" + livePeople);
             } else {//否则的话
                 liveKill += 1;//杀手人数+1
@@ -47,7 +50,7 @@ function judge() {
             $("#result").text("杀手胜利");
         }
     }
-}
+};
     judge();
 
 
@@ -84,4 +87,4 @@ for (i=0;i<player.length;i++) {//循环遍历整个数组
         $("."+ deathClassName).find(".sun").text( +[i+1]+ "号被投票投死真实身份是"+player[i].name);
     }
 
-}
+};

@@ -19,23 +19,23 @@ $(".examine").click(function () {
     // 点击第2次是玩家2
     // 点击第4次是玩家3
     //点击触发
-    $("#king").toggle();
+    $("#king,#people").toggle();
     //背景图片隐藏
-    $("#people").toggle();
+    // $("#people").toggle();
 
     if(num%2 ==0){//判断点击次数，显示的下一个玩家，这时要关闭身份显示；即身份提示关闭；
         //按钮显示“查看身份”
         if(play>=arr.length){
             window.location.href = " judge.html"
         };
-    play = play+1;
-    $(".figure").text(play);//文本输出play的值
-    $("#identity").empty();
+          play = play+1;
+        $(".figure").text(play);//文本输出play的值
+        $("#identity").empty();
     //设置他为空
-    $(".butTEXT").text("查看"+play+"号身份")
+        $(".butTEXT").text("查看"+play+"号身份")
     //获取数组下标并赋值给它
-    console.log(arr[play]);
-    console.log(play);
+         console.log(arr[play]);
+         console.log(play);
     } else {//当是奇数的时候，这时已经打开了身份，即“身份提示”显示；
         // “按钮”显示传递给下一位
         //当传递到最后一位时，发生跳转
@@ -45,7 +45,7 @@ $(".examine").click(function () {
     //字符串数字拼接
     $("#identity").text(arr[play-1]);
         console.log(play);
-        if(play>=arr.length){
+        if(play==arr.length){
             $(".butTEXT").text("查看法官页面");
         }
         // var a = play-1;
