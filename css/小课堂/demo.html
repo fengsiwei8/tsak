@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">//由值绝定类型
+// var tmp = new Date();
+//
+// function f() {//为什么要有块级作用域
+//     console.log(tmp);
+//     if (false) {
+//         var tmp = 'hello world';
+//     }
+// }
+//
+// f(); // undefined
+//
+// //上面代码的原意是，if代码块的外部使用外层的tmp变量，内部使用内层的tmp变量。
+// // 但是，函数f执行后，输出结果为undefined，原因在于变量提升，
+// // 导致内层的tmp变量覆盖了外层的tmp变量。
+//
+// var s = 'hello';
+//
+// for (var i = 0; i < s.length; i++) {
+//     console.log(s[i]);
+// }
+//
+// console.log(i); // 5
+// //上面代码中，变量i只用来控制循环，但是循环结束后，它并没有消失，泄露成了全局变量。
+//
+//
+// function a() {//执行期上下文
+//     function b() {
+//         var b =234;
+//     }
+//     var a =123;
+//     b();
+// }
+// var glob =100;
+// a();
+// function a() {
+//     var bb =1;
+//     function b() {
+//         var cc =2 ;
+//         console.log(bb);
+//         function c() {
+//             var dd =3;
+//
+//         }
+//         c();
+//     }
+//     b();
+// }
+// a();
+//     //a defined a.[[scope]]-->0:GO
+   // a doing  a.[[scope]]-->0:a:ao
+   //                       1:GO
+   // b defined b.[[scope]]-->0:a:ao
+//                          1:GO
+    //b doing b.[[scope]]--> 0:b:ao
+//                          1:a:ao
+//                          2:GO
+   //c defined c.[[scope]]-->0:b:ao
+//                          1:a:ao
+//                          2:GO
+ //c doing c.[[scope]]-->   0:c:ao
+//                          1:b:ao
+//                          2:a:ao
+//                          3:GO
+
+
+    function a() {
+        function b() {
+            var bb =234;
+            document.write(aa);
+        }
+        var aa = 123;
+        return b();
+    }
+    a();
+    // b();
+   /* var glob = 100;*/
+    // var demo = a();
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
