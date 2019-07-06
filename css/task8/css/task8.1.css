@@ -1,3 +1,6 @@
+
+
+
 body{
     margin: 0;
     background:#ffffff;
@@ -7,7 +10,7 @@ body{
 .header{
     height: 30px;
     color: #29b078;
-    font-size: 12px;
+    font-size: 15px;
 }
 .header-left{
     display: flex;
